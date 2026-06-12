@@ -103,7 +103,8 @@ Through this project, I gained hands-on experience with:
 * CRUD application architecture
 * Data seeding and automation
 * Server-side validation and security practices
-* MVC-based project organization
+
+
 
 ## 🤝 Contributing
 
