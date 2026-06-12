@@ -1,0 +1,142 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+    padding: 30px;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.header h1{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.addbtn button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    background: white;
+    color: #764ba2;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addbtn button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Container */
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 25px;
+}
+
+/* User Card */
+.card{
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.card img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 15px;
+}
+
+.info p{
+    margin: 10px 0;
+    word-break: break-word;
+}
+
+.info strong{
+    color: #ffffff;
+}
+
+/* Buttons */
+.info form{
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.info button{
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Edit Button */
+.info form:first-of-type button{
+    background: #00c853;
+    color: white;
+}
+
+.info form:first-of-type button:hover{
+    background: #00a844;
+    transform: scale(1.05);
+}
+
+/* Delete Button */
+.info form:last-of-type button{
+    background: #ff1744;
+    color: white;
+}
+
+.info form:last-of-type button:hover{
+    background: #d5002f;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .header{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .header h1{
+        font-size: 2rem;
+    }
+}
+
